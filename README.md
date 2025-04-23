@@ -3,7 +3,7 @@
 
 Este é um projeto de site pessoal e portfólio desenvolvido como parte do curso da comunidade Dev Completo, com orientação da professora Bia.
 
-O objetivo do projeto é criar uma presença online simples e profissional para apresentar minhas informações pessoais, habilidades e futuramente,projetos.
+O objetivo do projeto é criar uma presença online simples e profissional para apresentar minhas informações pessoais, habilidades e futuramente, projetos.
 
 # 🌐Demonstração:
 Link:
