@@ -6,7 +6,7 @@ Este é um projeto de site pessoal e portfólio desenvolvido como parte do curso
 O objetivo do projeto é criar uma presença online simples e profissional para apresentar minhas informações pessoais, habilidades e futuramente, projetos.
 
 # 🌐Demonstração:
-Link:
+Link: https://anapaulalgb.github.io/site-pessoal/
 
 # 🛠️ Tecnologias utilizadas
 
@@ -37,7 +37,7 @@ Organização de arquivos e boas práticas básicas de desenvolvimento web.
 Projeto desenvolvido com base nas aulas da professora Bia, como parte do curso da Comunidade Dev Completo.
 
 ## 🚀 Como acessar
-Você pode visualizar o site online aqui: 
+Você pode visualizar o site online aqui: https://anapaulalgb.github.io/site-pessoal/
 
 ## 📌 Status do projeto
 ✅ Finalizado (mas sempre aberto para melhorias!)
