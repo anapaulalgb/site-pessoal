@@ -1,0 +1,331 @@
+:root {
+    --primary-color: #3C3C3C;
+    --secondary-color: #ffffff;
+    --highlight-color: #FF9E44;
+    --darker-background: #222222;
+    --border-radius-base: 8px;
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+nav {
+    background-color: #EDEDED;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 63px;
+    box-shadow: 0px 4px 4px 0px #00000025;
+
+    a {
+        color: var(--primary-color);
+        text-decoration: none;
+    }
+}
+
+.title {
+    color: var(--secondary-color);
+    font-size: 3.8rem;
+    text-transform: uppercase;
+}
+
+#navBarLinks {
+    display: flex;
+
+    li {
+        padding-left: 73px;
+    }
+
+    li:last-child {
+        font-weight: bold;
+    }
+}
+
+#homeSection {
+    background-color: var(--darker-background);
+    padding-top: 65px;
+    display: flex;
+    justify-content: space-between;
+
+    #homePhoto {
+        width: 40vw;
+        height: calc(100vh - 65px);
+        background-image: url(assets/photos/foto-ana.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #homeContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+
+        h2 {
+            color: #B6B6B6;
+            font-weight: 400;
+            font-size: 2.4rem;
+            padding: 24px 0 64px 0;
+        }
+    }
+}
+
+#aboutSection {
+    background-color: var(--highlight-color);
+    display: flex;
+
+    #aboutMeTextsFlexContainer {
+        padding-top: 65px;
+        width: 60vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #aboutMeTextsFlexItem {
+            width: 80%;
+        }
+    }
+
+    #aboutMePhoto {
+        background-image: url("assets/photos/section_about_me.jpg");
+        width: 40vw;
+        background-size: cover;
+    }
+
+    p {
+        font-size: 1.75rem;
+        color: var(--secondary-color);
+        padding: 45px 0 56px 0;
+    }
+}
+
+#skillsSection {
+    background-image: url("assets/photos/section_skills.png");
+    background-size: cover;
+
+    .overlay {
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff70;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            color: var(--primary-color);
+            padding-bottom: 68px;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            gap: 27px;
+            padding-bottom: 164px;
+        }
+
+        li {
+            background-color: #00000039;
+            padding: 12px 17px;
+            border-radius: var(--border-radius-base);
+            color: var(--secondary-color);
+            font-size: 1.93rem;
+        }
+    }
+}
+
+#contactSection {
+    background-color: #2343E3;
+    display: flex;
+
+    #contactTextsContainer {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            padding-bottom: 60px;
+            text-decoration: underline;
+        }
+
+        p {
+            color: var(--secondary-color);
+            font-size: 1.56rem;
+        }
+
+        #contactTextsChild {
+            width: 80%;
+            max-width: 700px;
+        }
+    }
+
+    #contactPhoto {
+        background-image: url("assets/photos/contactPhoto.jpg");
+        width: 40vw;
+        background-size: cover;
+    }
+}
+
+.defaultButton {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 8px 14px;
+    color: var(--secondary-color);
+    border-radius: var(--border-radius-base);
+    cursor: pointer;
+
+    a {
+        padding-left: 11px;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+}
+
+.downloadButtonLight {
+    background-color: var(--highlight-color);
+}
+
+.downloadButtonDark {
+    background-color: var(--primary-color);
+}
+
+.linkedinButton {
+    background-color: #FEAF67;
+    padding: 14px;
+}
+
+.customLineHeight {
+    line-height: 2.4rem;
+}
+
+.emailAndPhone {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    font-style: normal;
+
+    .contactItem {
+        display: flex;
+        padding-top: 12px;
+
+        p {
+            padding-left: 14px;
+        }
+
+        .emailIcon {
+            width: 32px;
+        }
+    }
+}
+
+.socialMedia {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+
+    a {
+        background-color: #3756F3;
+        padding: 12px;
+        border-radius: var(--border-radius-base);
+    }
+
+    img {
+        height: 28px;
+    }
+}
+
+@media (orientation: portrait) {
+    .title {
+        font-size: 2.6rem;
+    }
+
+    section {
+        min-height: 100vh;
+        height: fit-content;
+    }
+
+    #homeSection {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        h2 {
+            font-size: 1.71rem;
+        }
+
+        #homePhoto {
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 3.8rem;
+        }
+
+        #homeTexts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #aboutMePhoto {
+        display: none;
+    }
+
+    #aboutSection {
+        #aboutMeTextsFlexContainer {
+            text-align: justify;
+            width: 100vw;
+            align-items: center;
+
+            #aboutMeTextsFlexItem {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            p {
+                font-size: 1.54rem;
+            }
+        }
+    }
+
+    #contactSection {
+        justify-content: center;
+        align-items: center;
+
+        #contactTextsChild {
+            align-items: center;
+        }
+
+        #contactTextsContainer {
+            width: 100vw;
+        }
+
+        #contactPhoto {
+            display: none;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    nav {
+        display: none;
+    }
+}
