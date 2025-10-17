@@ -303,8 +303,43 @@ nav {
     }
 
     #contactSection {
+
         justify-content: center;
         align-items: center;
+
+
+        #contactTextsContainer {
+            p {
+                text-align: justify;
+                font-size: 1.54rem;
+            }
+
+            .emailAndPhone {
+                width: 100%;
+                max-width: 100%;
+                overflow-wrap: break-word;
+                word-break: break-word;
+                flex-direction: column;
+                align-items: center;
+
+                .contactItem {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 32px;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+
+
+            }
+
+
+        }
+
 
         #contactTextsChild {
             align-items: center;
@@ -318,9 +353,6 @@ nav {
             display: none;
         }
 
-        p {
-            text-align: justify;
-        }
     }
 }
 
